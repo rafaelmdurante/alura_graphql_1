@@ -1,18 +1,12 @@
-const users = [
-  {
-    nome: 'John',
-    ativo: true
-  },
-  {
-    nome: 'Jane',
-    ativo: true
-  }
-]
-
 const userResolvers = {
   Query: {
-    users: () => users,
-    primeiroUser: () => users[0]
+    // root is the parent node, context contains the {dataSources} and info 
+    // contains everything the resolver needs to work
+    users: (root, args, context, info) => {
+      // The name of the fields 'nome', 'ativo' etc match the result, so there's
+      // no reason to add resolvers to the downstream fields.
+      return context.dataSources.usersAPI.getUsers()
+    }
   }
 }
 
