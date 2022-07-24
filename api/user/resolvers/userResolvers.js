@@ -6,7 +6,8 @@ const userResolvers = {
       // The name of the fields 'nome', 'ativo' etc match the result, so there's
       // no reason to add resolvers to the downstream fields.
       return context.dataSources.usersAPI.getUsers()
-    }
+    },
+    user: (root, { id }, { dataSources }) => dataSources.usersAPI.getUserById(id)
   }
 }
 
