@@ -16,6 +16,9 @@ const userResolvers = {
     },
     atualizaUser: async (root, updatedUser, { dataSources }) => {
       return dataSources.usersAPI.atualizaUser(updatedUser)
+    },
+    apagaUser: async (root, { id }, { dataSources }) => {
+      return dataSources.usersAPI.apagaUser(id)
     }
   }
 }

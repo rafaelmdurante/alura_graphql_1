@@ -49,6 +49,12 @@ class UsersAPI extends RESTDataSource {
 
     return { ...updatedUser, role }
   }
+
+  async apagaUser(id) {
+    await this.delete(`users/${id}`)
+
+    return id
+  }
 }
 
 module.exports = UsersAPI

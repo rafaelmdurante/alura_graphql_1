@@ -41,27 +41,6 @@
       "ativo": true,
       "email": "m@m.com",
       "role": 2
-    },
-    {
-      "nome": "Rafael",
-      "ativo": true,
-      "email": "r@r.com",
-      "role": 1,
-      "id": 7
-    },
-    {
-      "id": 8,
-      "nome": "Rafael",
-      "ativo": true,
-      "email": "r@r.com",
-      "role": 1
-    },
-    {
-      "nome": "Rafael",
-      "ativo": true,
-      "email": "r@r.com",
-      "role": 1,
-      "id": 9
     }
   ],
   "roles": [

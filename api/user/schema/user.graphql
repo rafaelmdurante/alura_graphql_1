@@ -33,6 +33,8 @@ const userSchema = gql `
       email: String!
       role: String!
     ): User!
+
+    apagaUser(id: ID!): ID!
   }
 `
 
