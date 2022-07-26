@@ -7,7 +7,12 @@ const userResolvers = {
       // no reason to add resolvers to the downstream fields.
       return context.dataSources.usersAPI.getUsers()
     },
-    user: (root, { id }, { dataSources }) => dataSources.usersAPI.getUserById(id)
+    user: (root, { id }, { dataSources }) =>
+      dataSources.usersAPI.getUserById(id)
+  },
+  Mutation: {
+    adicionaUser: async (root, user, { dataSources }) =>
+      dataSources.usersAPI.adicionaUser(user)
   }
 }
 
