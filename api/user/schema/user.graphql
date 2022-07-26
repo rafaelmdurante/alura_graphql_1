@@ -25,6 +25,14 @@ const userSchema = gql `
       email: String!,
       role: String!
     ): User!
+
+    atualizaUser(
+      id: ID!
+      nome: String!
+      ativo: Boolean!
+      email: String!
+      role: String!
+    ): User!
   }
 `
 
