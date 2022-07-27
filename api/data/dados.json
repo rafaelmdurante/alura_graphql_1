@@ -41,6 +41,14 @@
       "ativo": true,
       "email": "m@m.com",
       "role": 2
+    },
+    {
+      "nome": "Rafael",
+      "ativo": true,
+      "email": "r@r.com",
+      "role": 1,
+      "createdAt": "2022-07-29T00:00:00.000Z",
+      "id": 7
     }
   ],
   "roles": [

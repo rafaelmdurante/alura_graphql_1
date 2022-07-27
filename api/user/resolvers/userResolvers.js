@@ -1,4 +1,13 @@
+const { GraphQLScalarType, astFromValue } = require('graphql')
+
 const userResolvers = {
+  DateTime: new GraphQLScalarType({
+    name: 'DateTime',
+    description: 'string de data e hora no formato ISO-8601',
+    serialize: (date) => date.toISOString(),
+    parseValue: (dateString) => new Date(dateString),
+    parseLiteral: (abstractSyntaxTree) => new Date(abstractSyntaxTree.value)
+  }),
   Query: {
     // root is the parent node, context contains the {dataSources} and info 
     // contains everything the resolver needs to work
