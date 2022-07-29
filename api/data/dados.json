@@ -57,6 +57,13 @@
       "role": 1,
       "createdAt": "2022-07-28T00:00:00.000Z",
       "id": 8
+    },
+    {
+      "id": 9,
+      "nome": "Mohammed",
+      "ativo": true,
+      "email": "r@r.com",
+      "role": 1
     }
   ],
   "roles": [
