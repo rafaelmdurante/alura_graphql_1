@@ -10,8 +10,8 @@ Introduction to GraphQL by Alura.
 
 ## Servers
 
-Mocks: `http://localhost:3000`
-Apollog GraphQL Studio: `http://localhost:4000`
+- Mocks: `http://localhost:3000`
+- Apollog GraphQL Studio: `http://localhost:4000`
 
 ## Branching
 
