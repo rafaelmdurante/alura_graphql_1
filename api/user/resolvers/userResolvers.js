@@ -1,4 +1,4 @@
-const { GraphQLScalarType, astFromValue } = require('graphql')
+const { GraphQLScalarType } = require('graphql')
 
 const userResolvers = {
   RoleType: {
